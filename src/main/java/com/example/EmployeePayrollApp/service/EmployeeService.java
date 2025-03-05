@@ -1,3 +1,4 @@
+
 package com.example.EmployeePayrollApp.service;
 
 import com.example.EmployeePayrollApp.dto.EmployeeDTO;
@@ -64,16 +65,16 @@ public class EmployeeService {
     @Transactional
     public EmployeeDTO createEmployee(EmployeeDTO employeeDTO) {
         Employee savedEmployee = employeeRepository.save(new Employee(
-                                                null,  //Ensuring ID is null so Hibernate treats it as a new entity
-                                                employeeDTO.getName(),
-                                                employeeDTO.getSalary(),
+                null,  //Ensuring ID is null so Hibernate treats it as a new entity
+                employeeDTO.getName(),
+                employeeDTO.getSalary(),
                 employeeDTO.getGender(),
                 employeeDTO.getStartDate(),
                 employeeDTO.getNote(),
                 employeeDTO.getProfilePic(),
                 employeeDTO.getDepartments()
 
-                                        ));
+        ));
         return new EmployeeDTO(savedEmployee.getId(), savedEmployee.getName(), savedEmployee.getSalary(), savedEmployee.getGender(), savedEmployee.getStartDate(), savedEmployee.getProfilePic(), savedEmployee.getNote(), savedEmployee.getDepartments());
     }
 
