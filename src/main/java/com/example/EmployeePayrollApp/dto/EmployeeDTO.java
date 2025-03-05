@@ -12,27 +12,30 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EmployeeDTO {
+
     private long id;
 
-    @NotBlank(message = "Name is required and cannot be empty") // Required field
-    @Pattern(regexp = "^[A-Za-z ]+$", message = "Name must contain only letters and spaces") // Only letters & spaces
-    private String name;
-    @Min(value = 500,message = "min wedge should greater 500")
-    private double salary;
+    @NotBlank(message = "Name is required and cannot be empty")
+    @Pattern(regexp = "^[A-Za-z ]+$", message = "Name must contain only letters and spaces")
+    public String name;
 
-  @Pattern(regexp = "male/female",message = "Gender needs to be male or female")
-    private String gender;
+    @Min(value = 500, message = "Minimum wage should be greater than 500")
+    public double salary;
+
+    @Pattern(regexp = "(male|female)", message = "Gender must be either 'male' or 'female'")
+    public String gender;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
-    @NotNull(message = "startDate should not be Empty")
-    @PastOrPresent(message = "startDate should be past or today's date")
-    private LocalDate startDate;
+    @NotNull(message = "Start date should not be empty")
+    @PastOrPresent(message = "Start date should be a past or today's date")
+    public LocalDate startDate;
 
     @NotBlank(message = "Note cannot be empty")
-    private String note;
+    public String note;
 
-    @NotBlank(message = "profilePic cannot be empty")
-    private String profilePic;
+    @NotBlank(message = "Profile picture cannot be empty")
+    public String profilePic;
 
-    @NotNull(message = "department should Not be Empty")
-    private List<String> departments;
+    @NotNull(message = "Departments should not be empty")
+    public List<String> departments;
 }

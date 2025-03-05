@@ -1,5 +1,6 @@
 package com.example.EmployeePayrollApp.entity;
 
+import com.example.EmployeePayrollApp.dto.EmployeeDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,9 +12,8 @@ import java.util.List;
 @Table(name = "employees")
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-public  class Employee {
+public @Data class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Ensure ID is auto-generated
@@ -31,10 +31,31 @@ public  class Employee {
     private LocalDate startDate;
     private String note;
     private String profilePic;
+
+
+    @ElementCollection
+    @CollectionTable(name = "employee_department",joinColumns = @JoinColumn(name = "id"))
+    @Column(name = "department")
     private List<String> departments;
 
+  public Employee(){}
+
+    public Employee(EmployeeDTO employeeDTO){
+      this.updatedEmployee(employeeDTO);
+    }
+
+    public void updatedEmployee(EmployeeDTO employeeDTO){
+      this.name=employeeDTO.name;
+      this.salary=employeeDTO.salary;
+      this.gender=employeeDTO.gender;
+      this.note=employeeDTO.note;
+      this.startDate=employeeDTO.startDate;
+      this.profilePic=employeeDTO.profilePic;
+      this.departments=employeeDTO.departments;
 
 
+
+    }
 
 
 
