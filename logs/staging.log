@@ -1,0 +1,205 @@
+2025-02-28 08:02:56 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 20884 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 08:02:56 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 08:03:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 08:03:06 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 10.895 seconds (process running for 11.66)
+2025-02-28 08:15:33 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 8592 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 08:15:33 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 08:15:38 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 08:15:38 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.278 seconds (process running for 5.855)
+2025-02-28 08:23:13 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 15308 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 08:23:13 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 08:23:19 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 08:23:20 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 7.206 seconds (process running for 7.904)
+2025-02-28 08:25:16 [http-nio-4040-exec-1] ERROR c.e.E.e.GlobalExceptionHandler - Validation Error: {gender=Gender needs to be male or female}
+2025-02-28 08:25:16 [http-nio-4040-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.example.EmployeePayrollApp.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:368)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-02-28 08:25:16 [http-nio-4040-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.EmployeePayrollApp.dto.EmployeeDTO> com.example.EmployeePayrollApp.controller.EmployeeController.createEmployee(com.example.EmployeePayrollApp.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'gender': rejected value [male]; codes [Pattern.employeeDTO.gender,Pattern.gender,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@c50edcf,male/female]; default message [Gender needs to be male or female]] ]
+2025-02-28 08:28:01 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 20544 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 08:28:01 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 08:28:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 08:28:06 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.554 seconds (process running for 6.174)
+2025-02-28 08:28:09 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@377eb092
+2025-02-28 08:28:09 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 2: com.example.EmployeePayrollApp.dto.EmployeeDTO@2a4edeca
+2025-02-28 08:28:50 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Deleting employee with ID: 2
+2025-02-28 08:28:51 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Deleting employee with ID: 2
+2025-02-28 08:28:51 [http-nio-4040-exec-4] INFO  c.e.E.service.EmployeeService - Employee with ID 2 deleted successfully
+2025-02-28 08:28:51 [http-nio-4040-exec-4] INFO  c.e.E.controller.EmployeeController - Employee with ID 2 deleted successfully
+2025-02-28 08:29:26 [http-nio-4040-exec-5] ERROR c.e.E.e.GlobalExceptionHandler - Validation Error: {startDate=Start date should be a past or today's date}
+2025-02-28 08:29:26 [http-nio-4040-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.example.EmployeePayrollApp.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:368)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:471)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:73)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:182)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1357)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-02-28 08:29:26 [http-nio-4040-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.EmployeePayrollApp.dto.EmployeeDTO> com.example.EmployeePayrollApp.controller.EmployeeController.createEmployee(com.example.EmployeePayrollApp.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'startDate': rejected value [2025-12-12]; codes [PastOrPresent.employeeDTO.startDate,PastOrPresent.startDate,PastOrPresent.java.time.LocalDate,PastOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.startDate,startDate]; arguments []; default message [startDate]]; default message [Start date should be a past or today's date]] ]
+2025-02-28 08:29:54 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@5c8f4e55
+2025-02-28 08:29:54 [http-nio-4040-exec-7] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 3: com.example.EmployeePayrollApp.dto.EmployeeDTO@45db1612
+2025-02-28 08:30:18 [http-nio-4040-exec-8] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@2800e50d
+2025-02-28 08:30:18 [http-nio-4040-exec-8] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 4: com.example.EmployeePayrollApp.dto.EmployeeDTO@6f5c0663
+2025-02-28 08:30:49 [http-nio-4040-exec-9] INFO  c.e.E.controller.EmployeeController - Fetching all employees
+2025-02-28 08:30:49 [http-nio-4040-exec-9] INFO  c.e.E.service.EmployeeService - Fetching all employees from database
+2025-02-28 08:30:49 [http-nio-4040-exec-9] INFO  c.e.E.service.EmployeeService - Retrieved 3 employees
+2025-02-28 08:30:49 [http-nio-4040-exec-9] INFO  c.e.E.controller.EmployeeController - Retrieved 3 employees
+2025-02-28 14:04:07 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18208 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 14:04:07 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 14:04:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:04:12 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.137 seconds (process running for 6.866)
+2025-02-28 14:05:41 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@5d148ed9
+2025-02-28 14:05:41 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 5: com.example.EmployeePayrollApp.dto.EmployeeDTO@264cb75a
+2025-02-28 14:46:17 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 11152 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 14:46:17 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 14:46:22 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:46:23 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 6.018 seconds (process running for 6.699)
+2025-02-28 14:47:43 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@5a41dbb3
+2025-02-28 14:47:43 [http-nio-4040-exec-1] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 6: com.example.EmployeePayrollApp.dto.EmployeeDTO@66ac47a3
+2025-02-28 14:48:24 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Received request to create employee: com.example.EmployeePayrollApp.dto.EmployeeDTO@69c9a9ea
+2025-02-28 14:48:24 [http-nio-4040-exec-3] INFO  c.e.E.controller.EmployeeController - Employee created successfully with ID 7: com.example.EmployeePayrollApp.dto.EmployeeDTO@844a9e4
+2025-02-28 14:48:37 [http-nio-4040-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/employees/sales': {public org.springframework.http.ResponseEntity com.example.EmployeePayrollApp.controller.EmployeeController.getEmployeesByDepartment(java.lang.String), public org.springframework.http.ResponseEntity com.example.EmployeePayrollApp.controller.EmployeeController.getEmployeeById(java.lang.Long)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/employees/sales': {public org.springframework.http.ResponseEntity com.example.EmployeePayrollApp.controller.EmployeeController.getEmployeesByDepartment(java.lang.String), public org.springframework.http.ResponseEntity com.example.EmployeePayrollApp.controller.EmployeeController.getEmployeeById(java.lang.Long)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-02-28 14:55:13 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 5060 (D:\capgemini\Back-End\newEmployeePayrollApp\target\classes started by HP in D:\capgemini\Back-End\newEmployeePayrollApp)
+2025-02-28 14:55:13 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+2025-02-28 14:55:18 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:55:18 [restartedMain] INFO  c.e.E.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 5.789 seconds (process running for 6.425)
+2025-02-28 14:55:25 [http-nio-4040-exec-2] INFO  c.e.E.controller.EmployeeController - Retrieved 2 employees
