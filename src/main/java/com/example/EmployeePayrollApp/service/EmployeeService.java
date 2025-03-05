@@ -118,4 +118,15 @@ public class EmployeeService {
         log.info("Employee saved successfully with ID: {}", savedEmployee.getId());
         return mapToDTO(savedEmployee);
     }
+
+
+    //find Employee byb department function
+    public List<EmployeeDTO> getEmployeesByDepartment(String department){
+        List<EmployeeDTO> employees = employeeRepository.findEmployeeByDepartment(department).stream()
+                .map(this::mapToDTO)
+                .collect(Collectors.toList());
+
+        return employees;
+    }
+
 }
